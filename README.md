@@ -22,7 +22,8 @@ TV show's are **not** supported and there's **no** OpenSubtitle support for now.
 
 So, it cannot act as a complete JRScrap replacement for now.
 
-It works completely through your LAN ! Files can be on a NAS this time.
+It works completely with MCWS, (so  it's HTTP )
+Files can be on a NAS, there's no problem.
 
 # What it always will be
 Free
@@ -35,9 +36,9 @@ Long-term support is far from garanteed, same for regular updates : it's the pow
 
 ## Installation:
 
-A Windows installer is [here]().
+A Windows installer is [here](https://github.com/fredele/JRScrap2/blob/master/windows/Output/setup%20JRScrap2.exe).
 
-A android .apk is [here]().
+A android .apk is [here](https://github.com/fredele/JRScrap2/blob/master/android/bin/JRScrap2-0.1-debug.apk).
 
 Must be installed via "adb install <package_name.apk>" or kivy's buildozer, it's not available on the AppStore currently.
 
