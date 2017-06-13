@@ -1,0 +1,18 @@
+{ 
+  "searches" :
+    [
+		{	"search":		"[Media%20Type]=[Video]%20[Media%20Sub%20Type]=[Movie]%20~sort=[Name]&Fields=Name,Key,TMDB%20id,IMDb%20ID,Date,Description,Director,Actors,Keywords",
+    		"name" : 		"Movies sort by Name",
+     	 	"categorie": 	"Video"
+   		},
+		{	"search":		"[Media%20Type]=[Video]%20[Media%20Sub%20Type]=[Movie]%20~sort=[Date%20Imported]-d&Fields=Name,Key,TMDB%20id,IMDb%20ID,Date,Description,Director,Actors,Keywords",
+    		"name" : 		"Movies sort by Date Imported",
+     	 	"categorie": 	"Video"
+   		},
+		{	"search":		"[Media%20Type]=[Video]%20~sort=[Name]&Fields=Name,Key,TMDB%20id,IMDb%20ID,Date,Description,Director,Actors,Keywords",
+    		"name" : 		"All Videos",
+     	 	"categorie": 	"Video"
+   		}
+	]
+
+}

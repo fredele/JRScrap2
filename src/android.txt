@@ -1,0 +1,3 @@
+title=JRScrap
+author=fredele
+orientation=landscape

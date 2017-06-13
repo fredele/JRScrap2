@@ -1,0 +1,9 @@
+{
+  "languages": {
+	 "EN" : {"tmdb":""},
+ 	 "FR" : {"tmdb":"&language=FR", "tvdb": "FR"},
+ 	 "DE" : {"tmdb":"&language=DE"},
+ 	 "IT" : {"tmdb":"&language=IT"},
+     "RU" : {"tmdb":"&language=RU"}
+	}
+}
