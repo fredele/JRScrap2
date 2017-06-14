@@ -3,8 +3,8 @@
 block_cipher = None
 
 
-a = Analysis(['C:\\Users\\fredele\\Desktop\\JRScrap2\\src\\main.py'],
-             pathex=['C:\\Users\\fredele\\Desktop\\bin'],
+a = Analysis(['..\\..\\src\\main.py'],
+             pathex=['C:\\Users\\fredele\\Desktop\\JRScrap2\\windows\\bin'],
              binaries=[],
              datas=[],
              hiddenimports=[],
@@ -23,12 +23,11 @@ exe = EXE(pyz,
           debug=False,
           strip=False,
           upx=True,
-          console=False , icon='C:\\Users\\fredele\\Desktop\\JRScrap2\\res\\icon.ico')
-coll = COLLECT(exe,Tree('C:\\Users\\fredele\\Desktop\\JRScrap2\\src\\'),
+          console=False , icon='..\\..\\res\\icon.ico')
+coll = COLLECT(exe,Tree('..\\..\\src\\'),
                a.binaries,
                a.zipfiles,
                a.datas,
                strip=False,
                upx=True,
                name='JRScrap2')
-

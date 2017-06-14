@@ -35,8 +35,9 @@ class ScreenManager(ScreenManager):
 
     def GotoFilesStackScreen(self):
         self.current = 'FilesStackScreen'
-        search = self.app.searches[0]["search"]
-        self.app.FilesStackWidget.SearchFiles(search)
+
+        print(self.app.search)
+        self.app.FilesStackWidget.SearchFiles(self.app.search)
 
     def GotoFieldsStackScreen(self):
         self.current = 'FieldsStackScreen'
@@ -198,7 +199,8 @@ class WindowApp(App):
             self.btn.bind(on_press=self.SelectSearch)
             self.dropdownsearch.add_widget(self.btn)
         self.FilesStackScreen.ids.selectsearch.bind(on_release=self.dropdownsearch.open)
-
+        self.app.search = self.app.searches[0]["search"]
+        self.FilesStackScreen.ids.selectsearch.text = self.app.searches[0]["name"]
         # Construct the Select Menu
         self.dropdownselect = DropDown()
         self.btn = Button(text="All", size_hint_y=None, halign="left", height=65, background_color=[0, 0, 0, 0.8], background_normal='')
@@ -236,8 +238,8 @@ class WindowApp(App):
             self.app.FilesStackWidget.GetCurrentSelectedFiles()
         for index in self.searches:
             if index["name"] == w.text:
-                search = index["search"]
-                self.app.FilesStackWidget.SearchFiles(search)
+                self.search = index["search"]
+                self.app.FilesStackWidget.SearchFiles(self.search)
 
     def SelectAll(self, w):
         self.dropdownselect.select(w.text)

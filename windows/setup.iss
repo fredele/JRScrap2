@@ -22,7 +22,7 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DisableProgramGroupPage=yes
 OutputBaseFilename=setup JRScrap2
-SetupIconFile=C:\Users\fredele\Desktop\JRScrap2\res\icon.ico
+SetupIconFile=..\res\icon.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -33,8 +33,8 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked
 
 [Files]
-Source: "C:\Users\fredele\Desktop\bin\dist\JRScrap2\JRScrap2.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\fredele\Desktop\bin\dist\JRScrap2\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: ".\bin\dist\JRScrap2\JRScrap2.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: ".\bin\dist\JRScrap2\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
