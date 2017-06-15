@@ -16,7 +16,6 @@ def thumbnail_on_touch_down(self, touch):
 
 class TilesCheckWidget(BaseWidget):
     movieImage = ObjectProperty()
-    movieLabel = ObjectProperty()
 
     def __init__(self, parent_widget, res, **kwargs):
         super(TilesCheckWidget, self).__init__(**kwargs)
@@ -28,19 +27,7 @@ class TilesCheckWidget(BaseWidget):
         self.FileKey = str(res['Key'])
         self.movieImage.source = self.app.MCWS.address1 + 'File/GetImage?File=' + str(res['Key']) + '&FileType=Key&Type=Thumbnail&ThumbnailSize=' + self.app.thumbnail_size + '&Format=jpg&Token=' + self.app.MCWS.Token
         print(res['Key'])
-        if 'Name' in res:
-            self.name = res['Name']
-            self.ids.movieName.text = '[size=24]' + self.name + '[/size]'
-        if 'TMDB id' in res:
-            self.tmdb_id = res['TMDB id']
-        if 'IMDb ID' in res:
-            self.imdb_id = res['IMDb ID']
-        if 'Description' in res:
-            self.movieDescription.text = '\n[b]Description:     [/b]' + res["Description"] + '\n'
-        if 'Director' in res:
-            self.movieDirector.text = '[b]Director:     [/b]'+res["Director"]
-        if 'Actors' in res:
-            self.movieActors.text = '[b]Actors:     [/b]'+res["Actors"]+'\n'
+        self.Update(res)
 
     def update(self, *args):
         self.width = self.parent_widget.width
@@ -52,4 +39,19 @@ class TilesCheckWidget(BaseWidget):
         self.movieImage.source = val
 
     def SetText(self, val):
-        self.movieLabel.text = val
+        self.ids.movieLabel.text = val
+
+    def Update(self, res):
+        if 'Name' in res:
+            self.name = res['Name']
+            self.ids.movieLabel.text = '[size=24]' + self.name + '[/size]'
+        if 'TMDB id' in res:
+            self.tmdb_id = res['TMDB id']
+        if 'IMDb ID' in res:
+            self.imdb_id = res['IMDb ID']
+        if 'Description' in res:
+            self.movieDescription.text = '\n[b]Description:     [/b]' + res["Description"] + '\n'
+        if 'Director' in res:
+            self.movieDirector.text = '[b]Director:     [/b]'+res["Director"]
+        if 'Actors' in res:
+            self.movieActors.text = '[b]Actors:     [/b]'+res["Actors"]+'\n'

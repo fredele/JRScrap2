@@ -353,8 +353,8 @@
     id:tileswidget
     size_hint:None, None
 	width : app.FilesStackWidget.stack.width
-	height: max(movieDescription.height +movieName.height + movieDirector.height+ + movieActors.height ,movieImage.height )
-	movieName:movieName
+	height: max(movieDescription.height +movieLabel.height + movieDirector.height+ + movieActors.height ,movieImage.height )
+	movieLabel:movieLabel
 	movieImage:movieImage
     movieDescription:movieDescription
     movieDirector:movieDirector
@@ -363,6 +363,13 @@
     stack:stack
 
     BoxLayout:
+        movieLabel:movieLabel
+    	movieImage:movieImage
+        movieDescription:movieDescription
+        movieDirector:movieDirector
+        movieActors:movieActors
+        checkbox:checkbox
+        stack:stack
         pos:self.parent.pos
         size:self.parent.size
         CheckBox:
@@ -390,7 +397,7 @@
             pos:self.parent.pos
             width:self.parent.width
         	Label:
-                id: movieName
+                id: movieLabel
                 markup:True
                 size_hint_y: None
                 text_size: self.width, None

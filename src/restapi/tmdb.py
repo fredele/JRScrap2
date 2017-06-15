@@ -174,8 +174,8 @@ class TMDB():
         if str(self.app.CoverArtMassScrap) == "1":
             self.app.MCWS.SetImage(self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id']), resdict['cover_art'])
             tmb = self.app.FilesStackWidget.GetWidgetbyKey(self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id']))
-            tmb.SetImage(resdict['cover_art'])
-            tmb.SetText(resdict['Name'])
+            tmb.Update(resdict)
+
         self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetIndex()
 
     def Search_TMDB_ID_Callback(self, req, res):
