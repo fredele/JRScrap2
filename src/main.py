@@ -53,8 +53,7 @@ class JRScrap2App(App):
         super(JRScrap2App, self).__init__()
         self.platform = utils.platform
         Logger.debug('PLATEFORM : ' + self.platform)
-        if ((self.platform == 'linux') or (self.platform == 'windows')):
-            Window.size = (550, 700)
+
         self.app = App.get_running_app()
         self.root_dir = os.path.dirname(os.path.realpath(__file__))
         Config.read(os.path.join(self.root_dir, 'debug.ini'))
@@ -164,7 +163,9 @@ class JRScrap2App(App):
         self.store = JsonStore(join(self.root_dir + "/json/", "params.json"))
 
     def build(self):
-        Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
+        if ((self.platform == 'linux') or (self.platform == 'win')):
+            Window.size = (550, 700)
+            Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
         self.lang = self.app.config.getdefault("MCWS", "language", "EN")
         self.DateFormat = self.app.config.getdefault("MCWS", "date", "%d/%m/%Y")
         self.CoverArtMassScrap = self.app.config.getdefault("MCWS", "cover_art", "0")

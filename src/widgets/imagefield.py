@@ -21,8 +21,7 @@ class ImageField(Widget):
 
     def SetMCImage(self, Filekey):
         self.Filekey = Filekey
-        self.MCImageURL = self.app.MCWS.address1 + 'File/GetImage?File=' + self.Filekey + '&FileType=Thumbnail&ThumbnailSize='+self.app.thumbnail_size+'&Token=' + self.app.MCWS.Token
-        
+        self.MCImageURL = self.app.MCWS.address1 + 'File/GetImage?File=' + self.Filekey + '&FileType=Key&Type=Full&Format=jpg&Token=' + self.app.MCWS.Token
         try:
             self.srcImage.source = self.MCImageURL
             self.srcImage.reload()
