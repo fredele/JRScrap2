@@ -50,8 +50,7 @@ class TMDB():
                 tab['source'] = 'https://image.tmdb.org/t/p/w500' + HTTPToSTR(i['file_path']) + '?api_key=' + self.APIkey + self.lang
                 tab['text'] = '('+str(i['width'])+'X'+str(i['height'])+')'
                 resc.append(tab)
-
-        self.app.FieldsStackScreen.TW.callback(req, resc)
+        return resc
 
     def Search_Movies_Name(self, name):
 

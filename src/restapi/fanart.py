@@ -39,4 +39,4 @@ class FanArt():
                 tab['source'] = HTTPToSTR(i['url'])
                 tab['text'] = ' '
                 resc.append(tab)
-        self.app.FieldsStackScreen.TW.callback(req, resc)
+        return resc

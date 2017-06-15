@@ -168,7 +168,7 @@ class WindowApp(App):
         self.CoverArtMassScrap = self.app.config.getdefault("MCWS", "cover_art", "0")
         self.thumbnail_size = self.app.config.getdefault("MCWS", "thumbnail_size", "Medium")
         MCWS_port = self.config.getdefault("MCWS", "port", "52199")
-        MCWS_host = self.config.getdefault("MCWS", "host", "127.0.0.1")
+        MCWS_host = self.config.getdefault("MCWS", "host", "localhost")
         self.filesperpage = self.config.getdefault("MCWS", "filesperpage", "10")
         self.MCWS = MCWS(MCWS_host, MCWS_port)
 
@@ -273,7 +273,7 @@ class WindowApp(App):
     def build_config(self, config):
         # Set default configuration
         config.setdefaults("MCWS", {"port": "52199"})
-        config.setdefaults("MCWS", {"host": "127.0.0.1"})
+        config.setdefaults("MCWS", {"host": "localhost"})
         config.setdefaults("MCWS", {"admin": "admin"})
         config.setdefaults("MCWS", {"password": "password"})
         config.setdefaults("MCWS", {"language": "EN"})

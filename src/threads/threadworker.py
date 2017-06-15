@@ -32,13 +32,13 @@ class ThreadWorker():
 
     def Runthreads(self):
         for thread in self.ThreadsList:
-            UrlRequest(thread['request'], on_success=thread['callback'], on_error=self.error, on_failure=self.failure)
+            UrlRequest(thread['request'], on_success=self.callback, on_error=self.error, on_failure=self.failure)
 
     def callback(self, req, res):
         self.count -= 1
         for thread in self.ThreadsList:
             if thread['request'] == req.url:
-                self.resu.append({'name': thread['name'], 'result': res})
+                self.resu.append({'name': thread['name'], 'result': thread['callback'](req, res)})
                 thread['status'] = 'success'
         self.terminated()
 
