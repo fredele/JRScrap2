@@ -1,5 +1,0 @@
-RUN FROM THIS FOLDER :
-----------------------
-
-python -m PyInstaller  --noconsole --name JRScrap2 --icon ..\res\icon.ico ..\src\main.py
-python -m PyInstaller JRScrap2.spec
