@@ -5,7 +5,7 @@ from widgets.thumbnail import ThumbnailCheckWidget
 from widgets.tiles import TilesCheckWidget
 from widgets.base import BaseWidget
 from kivy.storage.jsonstore import JsonStore
-
+from restapi.mcws import MCWS
 
 class FilesStackWidget(Widget):
     stack = ObjectProperty()
@@ -15,7 +15,6 @@ class FilesStackWidget(Widget):
         self.app = App.get_running_app()
         self.actual_page_number = 0
         self.page_numbers = 0
-
 
     def Clear(self):
         self.stack.clear_widgets()
@@ -28,11 +27,10 @@ class FilesStackWidget(Widget):
 
     def SearchFiles(self, query):
         self.ids.stack.clear_widgets()
-        self.app.FilesStackWidget.Clear()
-        self.app.MCWS.SearchFiles(query, self.SearchFiles_CallBack)
+        self.MCWS = MCWS()
+        self.MCWS.SearchFiles(query, self.SearchFiles_CallBack)
 
     def SearchFiles_CallBack(self, req, res):
-        self.Clear()
         self.res = self.app.MCWS.MPLToDict(res)
         self.items_count = len(self.res)
         self.page_numbers = self.items_count / int(self.app.filesperpage)
@@ -41,7 +39,7 @@ class FilesStackWidget(Widget):
         self.display_widgets()
 
     def display_widgets(self):
-        self.app.FilesStackWidget.Clear()
+        self.Clear()
         if (self.app.store.exists('FileZoom') and (self.app.style == "Thumbnail")):
             self.app.FilesStackScreen.size_slider.value = self.app.store.get(self.app.style + "Zoom")['value']
         firstitemnbr = self.actual_page_number * int(self.app.filesperpage)
@@ -49,9 +47,9 @@ class FilesStackWidget(Widget):
         self.app.FilesStackScreen.pagenumber.text = "( " + str(self.actual_page_number+1) + " / " + str(self.page_numbers)+" )"
         for i in range(firstitemnbr, min(lastitemnbr, self.items_count)):
             if self.app.style == 'Thumbnail':
-                Widget1 = ThumbnailCheckWidget(self.app.FilesStackWidget, self.res[i])
+                Widget1 = ThumbnailCheckWidget(self, self.res[i])
             elif self.app.style == 'Tile':
-                Widget1 = TilesCheckWidget(self.app.FilesStackWidget, self.res[i])
+                Widget1 = TilesCheckWidget(self, self.res[i])
             self.AddWidget(Widget1)
 
     def SetWidgetsSize(self, value):

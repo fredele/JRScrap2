@@ -121,6 +121,9 @@ class TMDB():
 
     def Search_TMDB_ID_MASS_Callback(self, req, res):
         resdict = {}
+
+
+
         if 'overview' in res:
             resdict['Description'] = HTTPToSTR(res['overview'])
 
@@ -167,14 +170,14 @@ class TMDB():
         if 'id' in res:
             resdict['TMDB id'] = HTTPToSTR(res['id'])
 
+        key = self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id'])
+        resdict['key'] = key
         for field, value in resdict.items():
             if value is not None:
-                self.app.MCWS.SetInfo(self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id']), field, value, None)
+                self.app.MCWS.SetInfo(key, field, value, None)
 
-        if str(self.app.CoverArtMassScrap) == "1":
-            self.app.MCWS.SetImage(self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id']), resdict['cover_art'])
-            tmb = self.app.FilesStackWidget.GetWidgetbyKey(self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id']))
-            tmb.Update(resdict)
+        tmb = self.app.FilesStackWidget.GetWidgetbyKey(key)
+        tmb.Update(resdict)
 
         self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetIndex()
 

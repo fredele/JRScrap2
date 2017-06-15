@@ -33,11 +33,12 @@ class ThumbnailWidget(BaseWidget):
         self.width = val
         print(str(val))
 
+    def SetText(self, val):
+        self.movieLabel.text = val
+
     def SetImage(self, val):
         self.movieImage.source = val
 
-    def SetText(self, val):
-        self.movieLabel.text = val
 
 class ThumbnailCheckWidget(BaseWidget):
     movieImage = ObjectProperty()
@@ -49,15 +50,10 @@ class ThumbnailCheckWidget(BaseWidget):
         self.app = App.get_running_app()
         self.parent_widget = parent_widget
         self.SetSize(self.app.FilesStackScreen.size_slider.value)
-        self.bind(pos=self.update, size=self.update)
         self.bind(on_touch_down=thumbnail_on_touch_down)
         self.FileKey = str(res['Key'])
-        self.movieImage.source = self.app.MCWS.address1 + 'File/GetImage?File='+str(res['Key'])+'&FileType=Key&Type=Thumbnail&ThumbnailSize='+self.app.thumbnail_size+'&Format=jpg&Token=' + self.app.MCWS.Token
         self.Update(res)
-
-    def update(self, *args):
-        #self.height = self.parent_widget.height
-        pass
+        self.movieImage.source = self.app.MCWS.address1 + 'File/GetImage?File='+self.FileKey+'&FileType=Key&Type=Thumbnail&ThumbnailSize='+self.app.thumbnail_size+'&Format=jpg&Token=' + self.app.MCWS.Token
 
     def SetSize(self, val):
         self.width = val
@@ -70,3 +66,7 @@ class ThumbnailCheckWidget(BaseWidget):
                     self.tmdb_id = res['TMDB id']
                 if 'IMDb ID' in res:
                     self.imdb_id = res['IMDb ID']
+                if 'cover_art' in res:
+                    if str(self.app.CoverArtMassScrap) == "1":
+                        self.movieImage.source = res['cover_art']
+                        self.app.MCWS.SetImage(self.FileKey, res['cover_art'])

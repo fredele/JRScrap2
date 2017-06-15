@@ -22,11 +22,12 @@ class ImageField(Widget):
     def SetMCImage(self, Filekey):
         self.Filekey = Filekey
         self.MCImageURL = self.app.MCWS.address1 + 'File/GetImage?File=' + self.Filekey + '&FileType=Thumbnail&ThumbnailSize='+self.app.thumbnail_size+'&Token=' + self.app.MCWS.Token
-        print(self.MCImageURL)
+        
         try:
             self.srcImage.source = self.MCImageURL
+            self.srcImage.reload()
         except (RuntimeError, TypeError, NameError):
-            pass
+            print('SetMCImageError' + self.MCImageURL)
 
     def SetRESTImage(self, imageURL):
         self.RESTImageURL = imageURL

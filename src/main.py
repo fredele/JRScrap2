@@ -24,6 +24,7 @@ from kivy import utils
 from kivy.core.window import Window
 from os.path import join
 import json
+from kivy.config import Config
 
 
 class ScreenManager(ScreenManager):
@@ -45,11 +46,11 @@ class ScreenManager(ScreenManager):
         self.app.FieldsStackWidget.Clear()
 
 
-class WindowApp(App):
+class JRScrap2App(App):
     Schedule_time = 1
 
     def __init__(self):
-        super(WindowApp, self).__init__()
+        super(JRScrap2App, self).__init__()
         self.platform = utils.platform
         Logger.debug('PLATEFORM : ' + self.platform)
         if ((self.platform == 'linux') or (self.platform == 'windows')):
@@ -163,7 +164,7 @@ class WindowApp(App):
         self.store = JsonStore(join(self.root_dir + "/json/", "params.json"))
 
     def build(self):
-
+        Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
         self.lang = self.app.config.getdefault("MCWS", "language", "EN")
         self.DateFormat = self.app.config.getdefault("MCWS", "date", "%d/%m/%Y")
         self.CoverArtMassScrap = self.app.config.getdefault("MCWS", "cover_art", "0")
@@ -171,12 +172,12 @@ class WindowApp(App):
         MCWS_port = self.config.getdefault("MCWS", "port", "52199")
         MCWS_host = self.config.getdefault("MCWS", "host", "localhost")
         self.filesperpage = self.config.getdefault("MCWS", "filesperpage", "10")
-        self.MCWS = MCWS(MCWS_host, MCWS_port)
+
 
         # Add widgets to ScreenManager
         self.ScreenManager = ScreenManager()
 
-        self.FilesStackScreenControlWidget = FilesStackScreen(name='FilesStackScreen')
+        self.FilesStackScreenControlWidget = FilesStackScreen(name= 'FilesStackScreen')
         self.ScreenManager.add_widget(self.FilesStackScreenControlWidget)
         self.FieldsStackScreenControlWidget = FieldsStackScreen(name='FieldsStackScreen')
         self.ScreenManager.add_widget(self.FieldsStackScreenControlWidget)
@@ -218,6 +219,7 @@ class WindowApp(App):
         self.style = 'Thumbnail'
         self.current = 'FilesStackScreen'
 
+        self.MCWS = MCWS(MCWS_host, MCWS_port)
         self.MCWS.Authenticate()
 
         return self.ScreenManager
@@ -285,5 +287,5 @@ class WindowApp(App):
 
 
 if __name__ == '__main__':
-    WA = WindowApp()
+    WA = JRScrap2App()
     WA.run()

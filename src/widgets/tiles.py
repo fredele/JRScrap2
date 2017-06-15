@@ -22,15 +22,11 @@ class TilesCheckWidget(BaseWidget):
         self.app = App.get_running_app()
         self.parent_widget = parent_widget
         self.SetSize(self.app.FilesStackScreen.size_slider.value)
-        self.bind(pos=self.update, size=self.update)
         self.bind(on_touch_down=thumbnail_on_touch_down)
         self.FileKey = str(res['Key'])
         self.movieImage.source = self.app.MCWS.address1 + 'File/GetImage?File=' + str(res['Key']) + '&FileType=Key&Type=Thumbnail&ThumbnailSize=' + self.app.thumbnail_size + '&Format=jpg&Token=' + self.app.MCWS.Token
         print(res['Key'])
         self.Update(res)
-
-    def update(self, *args):
-        self.width = self.parent_widget.width
 
     def SetSize(self, val):
         pass
@@ -49,6 +45,9 @@ class TilesCheckWidget(BaseWidget):
             self.tmdb_id = res['TMDB id']
         if 'IMDb ID' in res:
             self.imdb_id = res['IMDb ID']
+        if 'cover_art' in res:
+            self.movieImage.source = res['cover_art']
+            self.app.MCWS.SetImage(self.FileKey, res['cover_art'])
         if 'Description' in res:
             self.movieDescription.text = '\n[b]Description:     [/b]' + res["Description"] + '\n'
         if 'Director' in res:
