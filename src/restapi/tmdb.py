@@ -97,7 +97,7 @@ class TMDB():
     def Search_IMDB_ID_MASS_Callback(self, req, res):
         resdict = {}
 
-        imdbid = StrFindBetween(req.url, "find/", "?api_key")
+        imdbid = StrFindBetween
         if 'movie_results' in res:
             if len(res['movie_results']) >= 1:
                 if 'overview' in res['movie_results'][0]:

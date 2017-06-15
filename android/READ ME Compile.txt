@@ -1,0 +1,3 @@
+buildozer android debug
+buildozer android deploy
+

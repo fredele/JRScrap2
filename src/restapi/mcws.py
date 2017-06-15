@@ -8,8 +8,10 @@ from kivy.app import App
 from misc.fields import New_Fields
 from misc.utils import ExcelToDate, DateToExcel, STRToHTTP
 from modal.noauthenticate import NoConnection
+from misc.funcdelay import FuncDelay
 import base64
 import urllib
+from misc.utils import StrFindBetween
 
 import xml.etree.ElementTree as ET
 
@@ -172,7 +174,10 @@ class MCWS():
 
     def SetImage_CallBack(self, req, res):
         if hasattr(self.app.FieldsStackWidget, 'imagefield'):
-            self.app.FieldsStackWidget.imagefield.SetMCImage(self.app.FieldsStackWidget.Filekey)
+            # TODO delay this ...
+            t = FuncDelay(1, StrFindBetween(req.url, "File=", "&FileType"))
+            t.start()
+            pass
 
     def SetImage_CallBack2(self, req, res):
         pass

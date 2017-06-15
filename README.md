@@ -36,13 +36,14 @@ Long-term support is far from garanteed, same for regular updates : it's the pow
 
 ## Installation:
 
-A Windows installer is [here](https://github.com/fredele/JRScrap2/blob/master/windows/Output/setup%20JRScrap2.exe).
+* A Windows installer is [here](https://github.com/fredele/JRScrap2/blob/master/windows/Output/setup%20JRScrap2.exe?raw=true).
 
-A android .apk is [here](https://github.com/fredele/JRScrap2/blob/master/android/bin/JRScrap2-0.1-debug.apk).
+* A android .apk is [here](https://github.com/fredele/JRScrap2/blob/master/android/bin/JRScrap2-0.1-debug.apk).
 
 Must be installed via "adb install <package_name.apk>" or kivy's buildozer, it's not available on the AppStore currently.
 
-On Linux, it can be run from source, but I think I will never try to do a package (too many distros. - far too few users). For Mac users, well, I'm not a fanboy ...
+* On Linux, it can be run from source, but I think I will never try to do a package (too many distros. - far too few users).
+* For Mac users, well, I'm not a fanboy ...
 
 ## Setup:
 
@@ -58,9 +59,6 @@ Find the IP address of your server and configure JRSCrap2 in it's settings (clic
 Restart JRScrap and it shoud show your Movies.
 
 ## Manual:
-I will write a short wiki one of these days ...
+See the little wiki [here](https://github.com/fredele/JRScrap2/wiki).
 
-## Developpement:
 
-It's coded on Ubuntu 17.04 with python 2.7 and Kivy 1.9 from the default dist repos., not the Kivy ones.
-This setup runs Kivy's buildozer to produce the Android version, while the .exe for Windows is produced from a VM running Windows 7 and packaged with Innosetup like JRScrap.
