@@ -38,6 +38,8 @@ Long-term support is far from garanteed, same for regular updates : it's the pow
 
 * A Windows installer is [here](https://github.com/fredele/JRScrap2/blob/master/windows/Output/setup%20JRScrap2.exe?raw=true).
 
+**The app. must be run with admin rights**
+
 * A android .apk is [here](https://github.com/fredele/JRScrap2/blob/master/android/bin/JRScrap2-0.1-debug.apk).
 
 Must be installed via "adb install <package_name.apk>" or kivy's buildozer, it's not available on the AppStore currently.
@@ -58,7 +60,5 @@ Find the IP address of your server and configure JRSCrap2 in it's settings (clic
 
 Restart JRScrap and it shoud show your Movies.
 
-## Manual:
+## Wiki:
 See the little wiki [here](https://github.com/fredele/JRScrap2/wiki).
-
-
