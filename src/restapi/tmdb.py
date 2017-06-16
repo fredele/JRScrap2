@@ -170,7 +170,7 @@ class TMDB():
         if 'id' in res:
             resdict['TMDB id'] = HTTPToSTR(res['id'])
 
-        key = self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetFileKeybyTMDB_ID(resdict['TMDB id'])
+        key = self.app.FilesStackScreen.MassScrapView.MassScrapThread1.GetCurrentKey()
         resdict['key'] = key
         for field, value in resdict.items():
             if value is not None:

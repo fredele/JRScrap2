@@ -24,7 +24,6 @@ from kivy import utils
 from kivy.core.window import Window
 from os.path import join
 import json
-from kivy.config import Config
 
 
 class ScreenManager(ScreenManager):
@@ -37,17 +36,18 @@ class ScreenManager(ScreenManager):
 
     def GotoFilesStackScreen(self):
         self.current = 'FilesStackScreen'
-
-        print(self.app.search)
         self.app.FilesStackWidget.SearchFiles(self.app.search)
 
     def GotoFieldsStackScreen(self):
         self.current = 'FieldsStackScreen'
-        self.app.FieldsStackWidget.Clear()
 
 
 class JRScrap2App(App):
     Schedule_time = 1
+
+    def on_stop(self):
+        Window.close()
+        return True
 
     def __init__(self):
         super(JRScrap2App, self).__init__()
@@ -216,7 +216,7 @@ class JRScrap2App(App):
         self.FilesStackScreen.ids.selectfiles.bind(on_release=self.dropdownselect.open)
         self.FilesStackScreen.ids.selectstyle.bind(on_release=self.SelectStyle)
         self.style = 'Thumbnail'
-        self.current = 'FilesStackScreen'
+        self.ScreenManager.current = 'FilesStackScreen'
 
         self.MCWS = MCWS(MCWS_host, MCWS_port)
         self.MCWS.Authenticate()
@@ -232,7 +232,10 @@ class JRScrap2App(App):
 
     def key_handler(self, window, keycode1, keycode2, text, modifiers):
         if keycode1 in [27, 1001]:
-            self.ScreenManager.GotoFilesStackScreen()
+            if self.ScreenManager.current == 'FieldsStackScreen':
+                self.ScreenManager.GotoFilesStackScreen()
+            elif self.ScreenManager.current == 'FilesStackScreen':
+                App.get_running_app().stop()
             return True
         return False
 
@@ -249,6 +252,7 @@ class JRScrap2App(App):
     def SelectSearch(self, w):
         self.dropdownsearch.select(w.text)
         self.FilesStackScreen.ids.selectsearch.text = w.text
+        self.FilesStackWidget.actual_page_number = 0
         if w.text == "Current selection":
             self.app.FilesStackWidget.GetCurrentSelectedFiles()
         for index in self.searches:

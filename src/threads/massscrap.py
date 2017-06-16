@@ -24,7 +24,7 @@ class MassScrapThread(Thread):
     def GetIndex(self):
 
         if self.index < len(self.files):
-            print("Srcapping ...")
+            print("Scrapping index:" + str(self.index))
             self.view.lbl.text = "Get :" + self.files[self.index]['name'] + '   (' + str(self.index+1) + '/' + str(len(self.files))+')'
             if ((self.files[self.index]['imdb id'] is not None) and (self.files[self.index]['tmdb id'] is not None)):
                 self.TMDB2.Search_TMDB_ID(self.files[self.index]['tmdb id'], self.TMDB2.Search_TMDB_ID_MASS_Callback)
@@ -44,12 +44,8 @@ class MassScrapThread(Thread):
     def run(self):
         self.GetIndex()
 
-    def GetFileKeybyTMDB_ID(self, tmdb):
-        r = ''
-        for item in self.files:
-            if item['tmdb id'] == tmdb:
-                r = item['key']
-        return r
+    def GetCurrentKey(self):
+        return self.files[self.index - 1]['key']
 
     def SetTMDB_IDbyIMDB_ID(self, imdb, tmdb):
         for item in self.files:

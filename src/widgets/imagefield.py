@@ -6,6 +6,7 @@ from kivy.properties import ObjectProperty
 from kivy.app import App
 from modal.coverartviewer import CoverArtViewer
 
+
 class ImageField(Widget):
     srcImage = ObjectProperty()
     srcLabel = ObjectProperty()

@@ -44,6 +44,8 @@ class FilesStackWidget(Widget):
             self.app.FilesStackScreen.size_slider.value = self.app.store.get(self.app.style + "Zoom")['value']
         firstitemnbr = self.actual_page_number * int(self.app.filesperpage)
         lastitemnbr = min((self.actual_page_number * int(self.app.filesperpage)) + int(self.app.filesperpage), self.items_count)
+        if self.items_count == 0:
+            self.actual_page_number = -1
         self.app.FilesStackScreen.pagenumber.text = "( " + str(self.actual_page_number+1) + " / " + str(self.page_numbers)+" )"
         for i in range(firstitemnbr, min(lastitemnbr, self.items_count)):
             if self.app.style == 'Thumbnail':
