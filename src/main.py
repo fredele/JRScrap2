@@ -163,9 +163,7 @@ class JRScrap2App(App):
         self.store = JsonStore(join(self.root_dir + "/json/", "params.json"))
 
     def build(self):
-        if ((self.platform == 'linux') or (self.platform == 'win')):
-            Window.size = (550, 700)
-            Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
+
         self.lang = self.app.config.getdefault("MCWS", "language", "EN")
         self.DateFormat = self.app.config.getdefault("MCWS", "date", "%d/%m/%Y")
         self.CoverArtMassScrap = self.app.config.getdefault("MCWS", "cover_art", "0")
@@ -223,7 +221,20 @@ class JRScrap2App(App):
         self.MCWS = MCWS(MCWS_host, MCWS_port)
         self.MCWS.Authenticate()
 
+        if ((self.platform == 'linux') or (self.platform == 'win')):
+            Window.size = (550, 700)
+            Config.set('input', 'mouse', 'mouse,multitouch_on_demand')
+        if (self.platform == 'android'):
+            pass
+        Window.bind(on_keyboard=self.key_handler)
+
         return self.ScreenManager
+
+    def key_handler(self, window, keycode1, keycode2, text, modifiers):
+        if keycode1 in [27, 1001]:
+            self.ScreenManager.GotoFilesStackScreen()
+            return True
+        return False
 
     def SelectStyle(self, w):
         if self.style == 'Thumbnail':
