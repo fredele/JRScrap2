@@ -12,6 +12,7 @@
 <FieldsStackScreen@Screen>:
 <FieldsStackWidget@Widget>:
 <FieldEditer@Widget>:
+<FilesSearch@Widget>:
 
 <NoConnection>:
     id:noconnection
@@ -156,6 +157,60 @@
             background_color:[0.1, 0.1, 0.1, 1]
             background_normal:''
 
+
+<FilesSearch>:
+	id : filesearch
+    title:title
+	size_hint : 0.8,0.9
+    background: join(app.root_dir + "/textures/", "transparent.png" )
+	textinput:textinput
+	BoxLayout:
+		textinput:textinput
+		orientation: 'vertical'
+		pos : self.parent.pos
+		size : self.parent.size
+		Label :
+            id:title
+			canvas.before:
+				Color:
+				    rgba:  0.1, 0.1, 0.1, 1
+				Rectangle:
+				    pos: self.pos
+				    size: self.size
+			text :'Search for Movie'
+			size_hint_y : None
+			height : 50
+			size_hint_x : 1
+            halign: 'center'
+            valign: 'middle'
+		TextInput:
+			id: textinput
+			size_hint_x : 1
+            height : 50
+			size_hint_y : None
+			background_color :[0.3, 0.3, 0.3, 0.5]
+			foreground_color :[1, 1, 1, 1]
+			cursor_color:[1, 1, 1, 1]
+            multiline: False
+            valign: 'middle'
+            focus:True
+		BoxLayout:
+			height : 50
+			size_hint_y : None
+			orientation: 'horizontal'
+            Button :
+				text :'Cancel'
+				on_release: filesearch.on_cancel()
+                background_color:[0.1, 0.1, 0.1, 1]
+                background_normal:''
+			Button :
+				text :'Search'
+				on_release: filesearch.on_search()
+                background_color:[0.1, 0.1, 0.1, 1]
+                background_normal:''
+
+        BoxLayout:
+        BoxLayout:
 
 <FieldEditer>:
 	id : fieldediter
@@ -770,14 +825,28 @@
                     center_y: self.parent.center_y
                     source: join(app.root_dir + "/textures/", "thumbnail.png" )
             Button:
+                id : filesearch
+                size_hint_x: None
+                size_hint_y: 1
+                width : 50
+                background_color:[0, 0, 0, 0.8]
+                background_normal:''
+                on_release: app.FilesStackScreen.OpenSearch()
+                Image:
+                    size : (50,30)
+                    stretch : False
+                    center_x: self.parent.center_x
+                    center_y: self.parent.center_y
+                    source: join(app.root_dir + "/textures/", "search.png" )
+            Button:
                 id : selectfiles
                 size_hint_x: None
                 size_hint_y: 1
-                width : 100
+                width : 50
                 background_color:[0, 0, 0, 0.8]
                 background_normal:''
                 Image:
-                    size : (90,30)
+                    size : (50,30)
                     stretch : False
                     center_x: self.parent.center_x
                     center_y: self.parent.center_y

@@ -19,6 +19,6 @@ class MassScrap(ModalView):
         self.MassScrapThread1.start()
 
     def on_cancel(self):
-        self.MassScrapThread1._Thread__stop()
+        self.MassScrapThread1.do_stop()
         self.app.FilesStackWidget.SelectNone()
         self.dismiss()

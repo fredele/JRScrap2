@@ -47,12 +47,13 @@ class FilesStackWidget(Widget):
         if self.items_count == 0:
             self.actual_page_number = -1
         self.app.FilesStackScreen.pagenumber.text = "( " + str(self.actual_page_number+1) + " / " + str(self.page_numbers)+" )"
-        for i in range(firstitemnbr, min(lastitemnbr, self.items_count)):
-            if self.app.style == 'Thumbnail':
-                Widget1 = ThumbnailCheckWidget(self, self.res[i])
-            elif self.app.style == 'Tile':
-                Widget1 = TilesCheckWidget(self, self.res[i])
-            self.AddWidget(Widget1)
+        if len(self.res) > 0:
+            for i in range(firstitemnbr, min(lastitemnbr, self.items_count)):
+                if self.app.style == 'Thumbnail':
+                    Widget1 = ThumbnailCheckWidget(self, self.res[i])
+                elif self.app.style == 'Tile':
+                    Widget1 = TilesCheckWidget(self, self.res[i])
+                self.AddWidget(Widget1)
 
     def SetWidgetsSize(self, value):
         for widget in self.stack.walk():

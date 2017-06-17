@@ -31,7 +31,7 @@ class FieldsStackWidget(Widget):
         for widget in self.stack.walk():
             if type(widget) is EditField:
                 if widget.fieldLabel.text == key:
-                    res = widget.valueLabel.text
+                    res = widget.MCvalue
         if res == '':
             res = False
         return res

@@ -5,6 +5,7 @@ from kivy.properties import ObjectProperty
 from kivy.uix.screenmanager import Screen
 from kivy.app import App
 from modal.massscrap import MassScrap
+from modal.filesearch import FilesSearch
 
 
 class FilesStackScreen(Screen):
@@ -25,3 +26,8 @@ class FilesStackScreen(Screen):
     def MassScrap(self):
         self.MassScrapView = MassScrap()
         self.MassScrapView.open()
+
+    def OpenSearch(self):
+        print('open')
+        searchbox = FilesSearch(self, auto_dismiss=False)
+        searchbox.open()

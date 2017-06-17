@@ -46,7 +46,7 @@ requirements = kivy, python2, openssl, requests
 #garden_requirements =
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+presplash.filename = ../res/splash.png
 
 # (str) Icon of the application
 icon.filename = ../res/icon.png

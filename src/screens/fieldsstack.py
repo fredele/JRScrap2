@@ -40,7 +40,7 @@ class FieldsStackScreen(Screen):
         if ((self.app.FieldsStackWidget.GetWidgetValuebyField('IMDb ID') is not False) and (self.app.FieldsStackWidget.GetWidgetValuebyField('TMDB id') is not False)):
             self.TMDB1.Search_TMDB_ID(self.app.FieldsStackWidget.GetWidgetValuebyField('TMDB id'), self.TMDB1.Search_TMDB_ID_Callback)
         if ((self.app.FieldsStackWidget.GetWidgetValuebyField('IMDb ID') is False) and (self.app.FieldsStackWidget.GetWidgetValuebyField('TMDB id') is False)):
-            self.TMDB1.Search_Movies_Name(self.app.FieldsStackWidget.GetWidgetValuebyField('Name'))
+            self.TMDB1.Search_Movies_Name(self.app.FieldsStackWidget.GetWidgetValuebyField('Name'), self.TMDB1.Search_Movies_Name_Callback)
 
     def TMDBSearchImages(self):
         if self.app.FieldsStackWidget.GetWidgetValuebyField('TMDB id') is not False:
@@ -51,12 +51,14 @@ class FieldsStackScreen(Screen):
             self.FanArt1.Search_Images(self.app.FieldsStackWidget.GetWidgetValuebyField('TMDB id'))
 
     def SearchAllImages(self):
+        self.TW.ThreadsList = []
         imdb_id = self.app.FieldsStackWidget.GetWidgetValuebyField('IMDb ID')
         tmdb_id = self.app.FieldsStackWidget.GetWidgetValuebyField('TMDB id')
         if tmdb_id is not False:
-            self.TW.AddThread('tmdb', 'https://api.themoviedb.org/3/movie/' + tmdb_id + '/images?api_key=' + self.TMDB1.APIkey + self.TMDB1.lang, self.TMDB1.Search_Images_TW_Callback)
-        if imdb_id is not False:
-            self.TW.AddThread('fanart', 'http://webservice.fanart.tv/v3/movies/' + imdb_id + '?api_key=' + self.FanArt1.APIkey,                 self.FanArt1.Search_Images_TW_Callback)
+            url = 'https://api.themoviedb.org/3/movie/' + tmdb_id + '/images?api_key=' + self.TMDB1.APIkey + self.TMDB1.lang
+            self.TW.AddThread('tmdb', url, self.TMDB1.Search_Images_TW_Callback)
+        #   if imdb_id is not False:
+            #  self.TW.AddThread('fanart', 'http://webservice.fanart.tv/v3/movies/' + imdb_id + '?api_key=' + self.FanArt1.APIkey,                 self.FanArt1.Search_Images_TW_Callback)
         self.TW.Runthreads()
 
     def SearchAllImages_Callback(self, res):

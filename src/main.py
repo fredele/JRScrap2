@@ -6,6 +6,7 @@ from __future__ import print_function
 from __future__ import unicode_literals
 
 import os
+
 from kivy.app import App
 from kivy.uix.button import Button
 from kivy.uix.screenmanager import ScreenManager
@@ -36,7 +37,14 @@ class ScreenManager(ScreenManager):
 
     def GotoFilesStackScreen(self):
         self.current = 'FilesStackScreen'
-        self.app.FilesStackWidget.SearchFiles(self.app.search)
+        print(self.app.search)
+        if self.app.search == "Current selection":
+            self.app.FilesStackWidget.GetCurrentSelectedFiles()
+        else:
+            self.app.FilesStackWidget.SearchFiles(self.app.search)
+            for index in self.app.searches:
+                if index["search"] == self.app.search:
+                    self.app.FilesStackScreen.ids.selectsearch.text = index["name"]
 
     def GotoFieldsStackScreen(self):
         self.current = 'FieldsStackScreen'
@@ -170,13 +178,13 @@ class JRScrap2App(App):
         self.thumbnail_size = self.app.config.getdefault("MCWS", "thumbnail_size", "Medium")
         MCWS_port = self.config.getdefault("MCWS", "port", "52199")
         MCWS_host = self.config.getdefault("MCWS", "host", "localhost")
-        self.filesperpage = self.config.getdefault("MCWS", "filesperpage", "10")
+        self.filesperpage = self.config.getdefault("MCWS", "filesperpage", "50")
 
 
         # Add widgets to ScreenManager
         self.ScreenManager = ScreenManager()
 
-        self.FilesStackScreenControlWidget = FilesStackScreen(name= 'FilesStackScreen')
+        self.FilesStackScreenControlWidget = FilesStackScreen(name='FilesStackScreen')
         self.ScreenManager.add_widget(self.FilesStackScreenControlWidget)
         self.FieldsStackScreenControlWidget = FieldsStackScreen(name='FieldsStackScreen')
         self.ScreenManager.add_widget(self.FieldsStackScreenControlWidget)
@@ -230,6 +238,7 @@ class JRScrap2App(App):
 
         return self.ScreenManager
 
+
     def key_handler(self, window, keycode1, keycode2, text, modifiers):
         if keycode1 in [27, 1001]:
             if self.ScreenManager.current == 'FieldsStackScreen':
@@ -254,6 +263,7 @@ class JRScrap2App(App):
         self.FilesStackScreen.ids.selectsearch.text = w.text
         self.FilesStackWidget.actual_page_number = 0
         if w.text == "Current selection":
+            self.search = "Current selection"
             self.app.FilesStackWidget.GetCurrentSelectedFiles()
         for index in self.searches:
             if index["name"] == w.text:
@@ -284,7 +294,7 @@ class JRScrap2App(App):
         self.DateFormat = self.app.config.getdefault("MCWS", "date", "%d/%m/%Y")
         self.CoverArtMassScrap = self.app.config.getdefault("MCWS", "cover_art", "0")
         self.thumbnail_size = self.app.config.getdefault("MCWS", "thumbnail_size", "Medium")
-        self.filesperpage = self.app.config.getdefault("MCWS", "filesperpage", "10")
+        self.filesperpage = self.app.config.getdefault("MCWS", "filesperpage", "50")
         if self.MCWS.Token is not None:
             self.ScreenManager.GotoFilesStackScreen()
 
@@ -299,7 +309,7 @@ class JRScrap2App(App):
         config.setdefaults("MCWS", {"thumbnail_size": "Medium"})
         config.setdefaults("MCWS", {"date": "%d/%m/%Y"})
         config.setdefaults("MCWS", {"cover_art": "0"})
-        config.setdefaults("MCWS", {"filesperpage": "10"})
+        config.setdefaults("MCWS", {"filesperpage": "50"})
 
 
 if __name__ == '__main__':

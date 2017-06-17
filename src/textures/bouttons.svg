@@ -28,17 +28,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="-221.22465"
-     inkscape:cy="90.31121"
+     inkscape:zoom="0.99999999"
+     inkscape:cx="-554.79705"
+     inkscape:cy="193.54628"
      inkscape:document-units="px"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="g4746"
      showgrid="false"
      units="px"
      inkscape:window-width="1920"
-     inkscape:window-height="1127"
+     inkscape:window-height="1103"
      inkscape:window-x="0"
-     inkscape:window-y="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      showguides="true"
      inkscape:guide-bbox="true"
@@ -320,227 +320,230 @@
        inkscape:export-filename="/home/fredele/Desktop/tile.png"
        inkscape:export-xdpi="89"
        inkscape:export-ydpi="89" />
-    <path
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
-       clip-path="none"
-       d="m -306.62984,1013.7147 v 37.8516 h 37.85155 v -37.8516 z m 2.50243,2.5504 h 32.73429 v 32.7342 h -32.73429 z"
-       id="rect3396-9-6"
-       inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
-       inkscape:export-xdpi="89"
-       inkscape:export-ydpi="89" />
     <g
-       id="g4694"
-       inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
-       inkscape:export-xdpi="89"
-       inkscape:export-ydpi="89">
-      <rect
-         y="1025.9435"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-1-9"
+       id="g4583">
+      <path
+         inkscape:export-ydpi="89"
+         inkscape:export-xdpi="89"
+         inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+         inkscape:connector-curvature="0"
+         id="rect3396-9-6"
+         d="m -306.62984,1013.7147 v 37.8516 h 37.85155 v -37.8516 z m 2.50243,2.5504 h 32.73429 v 32.7342 h -32.73429 z"
+         clip-path="none"
          style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1031.9032"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-6-2-3"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1037.8624"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-5-7-6"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1043.8219"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-56-0-0"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1019.9846"
-         x="-302.70404"
-         height="3.8184376"
-         width="3.8184376"
-         id="rect4304-3-1-7-2"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       transform="translate(13.090762,-2.9325485e-5)"
-       style="display:inline"
-       id="g4694-6"
-       inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
-       inkscape:export-xdpi="89"
-       inkscape:export-ydpi="89">
-      <rect
-         y="1025.9435"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-1-9-1"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1031.9032"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-6-2-3-8"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1037.8624"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-5-7-6-7"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1043.8219"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-56-0-0-9"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1019.9846"
-         x="-302.70404"
-         height="3.8184376"
-         width="3.8184376"
-         id="rect4304-3-1-7-2-2"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       transform="translate(6.5960277)"
-       style="display:inline"
-       id="g4694-0"
-       inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
-       inkscape:export-xdpi="89"
-       inkscape:export-ydpi="89">
-      <rect
-         y="1025.9435"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-1-9-2"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1031.9032"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-6-2-3-3"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1037.8624"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-5-7-6-75"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1043.8219"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-56-0-0-92"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1019.9846"
-         x="-302.70404"
-         height="3.8184376"
-         width="3.8184376"
-         id="rect4304-3-1-7-2-28"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       transform="translate(25.979578,-2.9325485e-5)"
-       style="display:inline"
-       id="g4694-9"
-       inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
-       inkscape:export-xdpi="89"
-       inkscape:export-ydpi="89">
-      <rect
-         y="1025.9435"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-1-9-7"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1031.9032"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-6-2-3-36"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1037.8624"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-5-7-6-1"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1043.8219"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-56-0-0-2"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1019.9846"
-         x="-302.70404"
-         height="3.8184376"
-         width="3.8184376"
-         id="rect4304-3-1-7-2-9"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-    </g>
-    <g
-       transform="translate(19.778599)"
-       style="display:inline"
-       id="g4694-3"
-       inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
-       inkscape:export-xdpi="89"
-       inkscape:export-ydpi="89">
-      <rect
-         y="1025.9435"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-1-9-19"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1031.9032"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-6-2-3-4"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1037.8624"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-5-7-6-78"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1043.8219"
-         x="-302.70404"
-         height="3.8187549"
-         width="3.8149331"
-         id="rect4304-3-56-0-0-4"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <rect
-         y="1019.9846"
-         x="-302.70404"
-         height="3.8184376"
-         width="3.8184376"
-         id="rect4304-3-1-7-2-5"
-         style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <g
+         inkscape:export-ydpi="89"
+         inkscape:export-xdpi="89"
+         inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+         id="g4694">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-9"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1025.9435" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-6-2-3"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1031.9032" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-5-7-6"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1037.8624" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-56-0-0"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1043.8219" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-7-2"
+           width="3.8184376"
+           height="3.8184376"
+           x="-302.70404"
+           y="1019.9846" />
+      </g>
+      <g
+         inkscape:export-ydpi="89"
+         inkscape:export-xdpi="89"
+         inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+         id="g4694-6"
+         style="display:inline"
+         transform="translate(13.090762,-2.9325485e-5)">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-9-1"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1025.9435" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-6-2-3-8"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1031.9032" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-5-7-6-7"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1037.8624" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-56-0-0-9"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1043.8219" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-7-2-2"
+           width="3.8184376"
+           height="3.8184376"
+           x="-302.70404"
+           y="1019.9846" />
+      </g>
+      <g
+         inkscape:export-ydpi="89"
+         inkscape:export-xdpi="89"
+         inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+         id="g4694-0"
+         style="display:inline"
+         transform="translate(6.5960277)">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-9-2"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1025.9435" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-6-2-3-3"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1031.9032" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-5-7-6-75"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1037.8624" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-56-0-0-92"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1043.8219" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-7-2-28"
+           width="3.8184376"
+           height="3.8184376"
+           x="-302.70404"
+           y="1019.9846" />
+      </g>
+      <g
+         inkscape:export-ydpi="89"
+         inkscape:export-xdpi="89"
+         inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+         id="g4694-9"
+         style="display:inline"
+         transform="translate(25.979578,-2.9325485e-5)">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-9-7"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1025.9435" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-6-2-3-36"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1031.9032" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-5-7-6-1"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1037.8624" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-56-0-0-2"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1043.8219" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-7-2-9"
+           width="3.8184376"
+           height="3.8184376"
+           x="-302.70404"
+           y="1019.9846" />
+      </g>
+      <g
+         inkscape:export-ydpi="89"
+         inkscape:export-xdpi="89"
+         inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+         id="g4694-3"
+         style="display:inline"
+         transform="translate(19.778599)">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-9-19"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1025.9435" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-6-2-3-4"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1031.9032" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-5-7-6-78"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1037.8624" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-56-0-0-4"
+           width="3.8149331"
+           height="3.8187549"
+           x="-302.70404"
+           y="1043.8219" />
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="rect4304-3-1-7-2-5"
+           width="3.8184376"
+           height="3.8184376"
+           x="-302.70404"
+           y="1019.9846" />
+      </g>
     </g>
     <g
        transform="translate(60.091698,56.283939)"
@@ -581,6 +584,49 @@
          width="3.8184376"
          id="rect4304-3-1-7-2-3"
          style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+    <g
+       id="g4746"
+       transform="matrix(0.46150582,0.4751314,-0.4751317,0.46150554,289.01205,620.13189)">
+      <g
+         id="g4764"
+         transform="translate(110.97302,-77.684372)"
+         inkscape:export-filename="/home/fredele/Desktop/g4764.png"
+         inkscape:export-xdpi="89"
+         inkscape:export-ydpi="89">
+        <g
+           id="g4757">
+          <path
+             transform="matrix(1.0518945,-1.0829515,1.0829522,1.0518952,-975.58333,-339.32767)"
+             style="display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             clip-path="none"
+             d="m -300.00072,842.51757 v 37.8516 h 37.85155 v -37.8516 z m 2.50243,2.5504 h 32.73429 v 32.7342 h -32.73429 z"
+             id="rect3396-9-6-6"
+             inkscape:connector-curvature="0"
+             inkscape:export-filename="/home/fredele/Desktop/thumbnail.png"
+             inkscape:export-xdpi="89"
+             inkscape:export-ydpi="89" />
+          <ellipse
+             ry="12.708448"
+             rx="13.079358"
+             cy="858.75604"
+             cx="-331.01852"
+             id="path4724"
+             style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-width:2.60469222;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             transform="matrix(0.99996319,-0.0085805,-0.00857622,0.99996322,0,0)" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4726"
+             d="m -338.52272,874.75863 0.0803,5.31441"
+             style="fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:1.79468465;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+          <path
+             inkscape:connector-curvature="0"
+             id="path4726-9"
+             d="m -338.47781,877.5796 0.1374,21.05191"
+             style="display:inline;fill:#ffffff;fill-rule:evenodd;stroke:#ffffff;stroke-width:5.29347038;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+             sodipodi:nodetypes="cc" />
+        </g>
+      </g>
     </g>
   </g>
 </svg>

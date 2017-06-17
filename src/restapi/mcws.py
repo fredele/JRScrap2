@@ -153,6 +153,7 @@ class MCWS():
     def SearchFiles(self, query, callback):
         Logger.debug('Search:SearchFiles')
         url = MCWS.address1+'Files/Search?Query='+query
+        Logger.debug('Search url :' + url)
         UrlRequest(url, req_headers=MCWS.headers, on_success=callback)
 
     def FileInfo(self, key, callback):
