@@ -27,6 +27,7 @@ class EditField(Widget):
     def Save_Field_callback(self, req, res):
             print('Save_Field')
             self.valueLabel.text = self.RESTvalue
+            self.MCvalue = self.RESTvalue
             self.DisplayMCValue = True
             self.RESTvalue = None
 
